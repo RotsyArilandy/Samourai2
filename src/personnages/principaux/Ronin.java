@@ -18,16 +18,17 @@ public class Ronin extends Humain {
 	}
 	
 	public void donner (int n, Commercant c) {
-		perdreArgent(n);
+		this.perdreArgent(n);
 		c.gagnerArgent(n);
+		parler("Tiens "+ c.getNom()+ " voilà " + c.getArgent()+ " sous");
 	}
 	
 	public void provoquer(Yakuza y) {
 		if (2*this.honneur > y.getReputation()){
-			y.perdreDuel();
 			gagnerArgent(y.getArgent());
+			y.perdreDuel();
 			honneur++;
-			parler("Je suis trop fort!! J'ai gagné contre le Yakuza "+y.getNom());
+			parler("Je t’ai eu petit yakusa!");
 		}
 		
 		else {

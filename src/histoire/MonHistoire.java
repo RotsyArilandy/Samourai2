@@ -7,34 +7,20 @@ import personnages.principaux.Yakuza;
 
 public class MonHistoire {
 	
-	public static void main (String [] args ) {
-		Commercant c = new Commercant("Paul",500);
-		Ronin r = new Ronin("Ronin Paul",25,"Rhum");
-		Yakuza y = new Yakuza ("Yakuza GÈrard",50, "Coca","Gauche",0);
-		
-		/**System.out.println("L'argent du commerÁant est "+ c.getArgent());
-		System.out.println("L'argent du yakuza est "+ y.getArgent());
-		y.extorquer(c);
-		System.out.println("AprËs l'excroquerie , l'argent du commerÁant est "+c.getArgent());
-		System.out.println("AprËs l'excroquerie , l'argent du yakuza est "+y.getArgent());
-		c.recevoir(5);
-		System.out.println(c.getArgent());**/
-		
-		
-		r.direBonjour();
-		y.direBonjour();
-		System.out.println("Argent Ronin "+r.getArgent());
-		System.out.println("Argent Yakuza "+y.getArgent());
-		System.out.println("Le ronin va provoquer le yakuza");
-		r.provoquer(y);
-		System.out.println("Argent Ronin "+r.getArgent());
-		System.out.println("Argent Yakuza "+y.getArgent());
-		System.out.println("Honneur Ronin "+ r.getHonneur());
-		System.out.println("RÈputation Yakuza "+ y.getReputation());
-		
-		
-		
-		
-		
+	public static void main(String [] args) {    
+	  Humain humain = new Humain("Prof", 10, "Porto");
+	  humain.direBonjour();
+	  humain.boire();
+	  Commercant commercant = new Commercant("Marchand", 35);
+	  commercant.direBonjour();
+	  Yakuza yakusa = new Yakuza("Yaku‚ê£le‚ê£noir", 42,"biere", "WarSong");
+	  yakusa.direBonjour();
+	  yakusa.extorquer(commercant);
+	  Ronin ronin = new Ronin("Roro", 61, "sake");
+	  ronin.donner(10, commercant );
+	  ronin.provoquer(yakusa);
+	  ronin.direBonjour();
 	}
+
 }
+
