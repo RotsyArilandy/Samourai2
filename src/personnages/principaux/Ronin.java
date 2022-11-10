@@ -12,9 +12,8 @@ public class Ronin extends Humain {
 	 * @param boisson
 	 * @param honneur
 	 */
-	public Ronin(String nom, int argent, String boisson, int honneur) {
+	public Ronin(String nom, int argent, String boisson) {
 		super(nom, argent, boisson);
-		this.honneur = honneur;
 		this.honneur = 1;
 	}
 	
@@ -38,6 +37,13 @@ public class Ronin extends Humain {
 		}
 			
 	}
+
+	
+	public int getHonneur() {
+		return honneur;
+	}
+	
+	
 	
 	
 	

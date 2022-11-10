@@ -40,7 +40,7 @@ public class Yakuza extends Humain{
 	}
 	
 	public void direBonjour() {
-		super.direBonjour();
+		super.parler("Bonjour ! Je m'appelle " +getNom() + " et j'aime boire du "+ getBoisson() + " et j'appartiens au clan de "+ this.clan);
 	}
 
 	
