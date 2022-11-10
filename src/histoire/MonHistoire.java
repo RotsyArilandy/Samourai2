@@ -1,6 +1,6 @@
-package testGit;
+package histoire;
 
-public class Histoire {
+public class MonHistoire {
 	
 	public static void main (String [] args ) {
 		System.out.println("Test Git2");
