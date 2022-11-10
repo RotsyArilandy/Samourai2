@@ -1,17 +1,20 @@
 package histoire;
 
 import personnages.Humain;
+import personnages.principaux.Commercant;
 
 public class MonHistoire {
 	
 	public static void main (String [] args ) {
-		Humain h = new Humain("Rotsy",500,"thé");
-		h.direBonjour();
-		h.parler("J'ai "+ h.getArgent());
-		h.gagnerArgent(40);
-		h.parler("J'ai "+ h.getArgent());
-		h.perdreArgent(50);
-		h.parler("J'ai "+ h.getArgent());
+		Commercant c = new Commercant("Paul",500);
+		c.direBonjour();
+		c.parler ("J'ai "+ c.getArgent());
+		c.seFaireExtorquer();
+		c.parler ("J'ai "+ c.getArgent());
+		
+		
+		
+		
 		
 	}
 }
